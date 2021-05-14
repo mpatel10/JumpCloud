@@ -74,5 +74,12 @@ extra long password, and short password in password field.
 Result: There were all submitted without error.
 
 
+10. I submitted same request 6 times with same password. I see application storing same encrypted password 6 times. So its creating duplicate records. I am not sure how the backend database is storing it.
+Ex: Stat ID # 6: NN0PAKtieayiTY8/Qd53AeMzHkbvZDdwYYiDnwtDdv/FIWvcy1sKCb7qi7Nu8Q8Cd/MqjQeyCI0pWKDGp74A1g==
 
+Ex: Stat ID # 1: NN0PAKtieayiTY8/Qd53AeMzHkbvZDdwYYiDnwtDdv/FIWvcy1sKCb7qi7Nu8Q8Cd/MqjQeyCI0pWKDGp74A1g==
+
+
+11. In related to previous test (#10); returning stats in "TotalRequest" is it referring to number of new requests or number of records? 
+ I am getting response as {"TotalRequests":6,"AverageTime":0}. So, it seems its adding same requests as "new" request and also average time is not updating sometimes.
 
